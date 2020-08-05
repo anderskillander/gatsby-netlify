@@ -5,6 +5,13 @@ module.exports = {
       options: {},
     },
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/content/posts/blog`,
+      },
+    },
   ],
   // Customize your site metadata:
   siteMetadata: {
